@@ -1,0 +1,52 @@
+<html>
+<head>
+<title>Visual Flow Help Center!</title>
+<style type="text/css">
+p {font-size:14px; font-family:'Courier New'}
+a {font-size:14px; font-family:'Courier New'; text-decoration:none; font-weight:bold}
+</style>
+</head>
+<body>
+
+
+<a href="#allg"></a>
+<h1>Welcome to the Visual Flow Help Page!</h1>
+<a name="99"><h2>ERRORS</h2></a>
+<table border="0" bgcolor="020202">
+<tr>
+	<td valign="top"><a name="100"><b>MODEL Line</b></a></td>
+	<td>Die MODEL Zeile ist obligatorisch. In ihr können Sie dem Modell einen Namen geben.
+	 <br><b>Syntax:</b> MODEL="text"
+	 wobei text alle Zeichen ausser " enthalten darf. text darf auch leer sein; dies wird 
+	 aber nicht empfohlen.
+	</td>
+</tr>
+<tr>
+	<td valign="top"><a name="101"><b>VERSION Line</b></a></td>
+	<td>Die VERSION Zeile ist obligatorisch. In ihr können Sie dem Modell einen Version geben.
+	 <br><b>Syntax:</b> VERSION="text"
+	 wobei text alle Zeichen ausser " enthalten darf. text darf auch leer sein; dies wird 
+	 aber nicht empfohlen.</td>
+</tr>
+<tr>
+	<td valign="top"><a name="102"><b>OUTPUT Line</b></a></td>
+	<td>Die OUTPUT Zeile ist obligatorisch. In ihr können Sie den Namen einer Datei bestimmen, in
+	 welcher das Resultat gespeichert wird.
+	 <br><b>Syntax:</b> OUTPUT="text"
+	 wobei der Dateiname *.xls heissen sollte.
+	</td>
+</tr>
+<tr>
+	<td valign="top"><a name="103"><b>TYPE Line</b></a></td>
+	<td> Die TYPE Zeile ist obligatorisch. In ihr bestimmen sie den Typ der Simulation. Es stehen 
+	 Constant und Normal zur Verfügung. Bei der Auswahl von Normal werden die Werte als 
+	 Wahrscheinlichkeitsverteilung dargestellt. Das Setzen einer Varianz (VAR) ist erforderlich.
+	 <br><b>Syntax:</b> TYPE=Constant, TYPE=Normal VAR=x
+	 wobei x eine positive reelle Zahl ist</td>
+</tr>
+</table>
+
+
+
+</body>
+</html>

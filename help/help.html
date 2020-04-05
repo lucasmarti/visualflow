@@ -1,0 +1,93 @@
+<html>
+<head>
+<title>Visual Flow Help Center!</title>
+<style type="text/css">
+p {font-size:14px; font-family:'Courier New'}
+a {font-size:14px; font-family:'Courier New'; text-decoration:none; font-weight:bold}
+</style>
+</head>
+<body>
+
+
+<a href="#allg"></a>
+<h1>Welcome to the Visual Flow Help Page!</h1>
+<a name="99"><h2>ERRORS</h2></a>
+<table border="0" bgcolor="020202">
+<tr>
+	<td valign="top"><a name="100"><b>MODEL Line</b></a></td>
+	<td>Die MODEL Zeile ist obligatorisch. In ihr können Sie dem Modell einen Namen geben.
+	 <br><b>Syntax:</b> MODEL="text"
+	 wobei text alle Zeichen ausser " enthalten darf. text darf auch leer sein; dies wird 
+	 aber nicht empfohlen.
+	</td>
+</tr>
+<tr>
+	<td valign="top"><a name="101"><b>VERSION Line</b></a></td>
+	<td>Die VERSION Zeile ist obligatorisch. In ihr können Sie dem Modell einen Version geben.
+	 <br><b>Syntax:</b> VERSION="text"
+	 wobei text alle Zeichen ausser " enthalten darf. text darf auch leer sein; dies wird 
+	 aber nicht empfohlen.</td>
+</tr>
+<tr>
+	<td valign="top"><a name="102"><b>OUTPUT Line</b></a></td>
+	<td>Die OUTPUT Zeile ist obligatorisch. In ihr können Sie den Namen einer Datei bestimmen, in
+	 welcher das Resultat gespeichert wird.
+	 <br><b>Syntax:</b> OUTPUT="text"
+	 wobei der Dateiname *.xls heissen sollte.
+	</td>
+</tr>
+<tr>
+	<td valign="top"><a name="103"><b>TYPE Line</b></a></td>
+	<td> Die TYPE Zeile ist obligatorisch. In ihr bestimmen sie den Typ der Simulation. Es stehen 
+	 Constant und Normal zur Verfügung. Bei der Auswahl von Normal werden die Werte als 
+	 Wahrscheinlichkeitsverteilung dargestellt. Das Setzen einer Varianz (VAR) ist erforderlich.
+	 <br><b>Syntax:</b> TYPE=Constant, TYPE=Normal VAR=x
+	 wobei x eine positive reelle Zahl ist</td>
+</tr>
+<tr>
+	<td valign="top"><a name="103"><b>RUNS Line</b></a></td>
+	<td> Die RUNS Zeile ist obligatorisch. In ihr bestimmen sie die Anzahl der Simulation. Es wird eine Ganzzahl grösser 0
+	verlangt.
+	 <br><b>Syntax:</b> RUNS=x
+	 wobei x eine positive ganze Zahl ist</td>
+</tr>
+<tr>
+	<td valign="top"><a name="103"><b>STEPS Line</b></a></td>
+	<td> Die STEPS Zeile ist obligatorisch. In ihr bestimmen sie die Anzahl Iterationen in einer Simulation. Es wird eine Ganzzahl grösser 0
+	verlangt.
+	 <br><b>Syntax:</b> STEPS=x
+	 wobei x eine positive ganze Zahl ist</td>
+</tr>
+<tr>
+	<td valign="top"><a name="103"><b>PRECISION Line</b></a></td>
+	<td> Die PRECISION Zeile ist obligatorisch. In ihr bestimmen sie die Präzision der Berechnungen. Es wird eine Potenz von 10 kleiner 0
+	verlangt.
+	 <br><b>Syntax:</b> PRECISION=x
+	 wobei x zum Beispiel 0.1, 0.01 usw. ist</td>
+</tr>
+<tr>
+	<td valign="top"><a name="103"><b>COMPARTMENT Line</b></a></td>
+	<td> Ein Modell besteht aus einem oder mehreren COMPARTMENT Zeilen.
+	 <br><b>Syntax:</b> COMPARTMENT a=x
+	 wobei a ein eindeutiger Name ist und x eine Zahl</td>
+</tr>
+<tr>
+	<td valign="top"><a name="103"><b>PARAMETER Line</b></a></td>
+	<td> Ein Modell besteht aus einem oder mehreren PARAMETER Zeilen.
+	 <br><b>Syntax:</b> PARAMETER a=x oder PARAMETER a=x STD=y (für TYPE=Normal)
+	 wobei a ein eindeutiger Name ist, x eine Zahl und y >0</td>
+</tr>
+<tr>
+	<td valign="top"><a name="103"><b>DELTA Line</b></a></td>
+	<td> Ein Modell besteht aus einem oder mehreren DELTA Zeilen. Sie dient dazu, die Veränderung pro Zeiteinheit für
+	ein Compartment anzugeben. Es handelt sich um einen mathematischen Ausdruck. 
+	 <br><b>Syntax:</b> DELTA a=x oder DELTA a=x STD=y (für TYPE=Normal)
+	 wobei a ein eindeutiger Name ist, x eine Zahl und y >0</td>
+</tr>
+
+</table>
+
+
+
+</body>
+</html>
